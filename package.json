@@ -1,23 +1,9 @@
 {
   "name": "betaBot",
   "version": "1.0.0",
-  "description": "BetaBot1.0",
-  "main": "app.js",
-  "type": "module",
-  "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
-  },
-  "author": "Wyat Soule",
-  "license": "MIT",
-  "dependencies": {
-    "discord-interactions": "^3.2.0",
-    "dotenv": "^16.0.0",
-    "express": "^4.17.3",
-    "node-fetch": "^3.2.3"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.15"
-  },
-  "repository": "git@github.com:wsoule/betaBot.git"
+  "description": "Beta discord bot",
+  "main": "index.js",
+  "repository": "git@github.com:wsoule/betaBot.git",
+  "author": "Wyat Soule <wsoule679@gmail.com>",
+  "license": "MIT"
 }

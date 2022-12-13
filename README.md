@@ -1,1 +1,0 @@
-# This is my new and improved discord bot
