@@ -51,6 +51,5 @@ async function getEventFiles(): Promise<string[]> {
 })();
 
 
-
 // Log in to Discord with the client token
 client.login(config.token);
