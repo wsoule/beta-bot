@@ -9,7 +9,8 @@ module.exports = {
     // interaction.user is the object representing the User who ran the command
     // interaction.member is the GuildMember object, which represents the user in the specific guild
     if(interaction.member) {
-      await interaction.reply(`this command was run by ${interaction.user}, who joined on ${member.joinedAt}.\nTheir avatar is this: ${member.displayAvatarURL()}`);
+      await interaction.reply(`this command was run by ${interaction.user}, who joined on ${member.joinedAt}.\nTheir avatar is:`);
+      await interaction.channel?.send(member.displayAvatarURL());
     }
   }
 };

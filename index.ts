@@ -5,7 +5,7 @@ import config from './config.json';
 
 
 // create client instance
-const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+export const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
 client.commands = new Collection();
 
