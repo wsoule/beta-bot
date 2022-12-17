@@ -1,11 +1,16 @@
 import { readdir } from 'node:fs/promises';
 import path from 'node:path';
-import { Client, Collection, GatewayIntentBits } from 'discord.js';
+import { Client, Collection, GatewayIntentBits, IntentsBitField } from 'discord.js';
 import config from './config.json';
 
 
+
 // create client instance
-export const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+
+// Intents.NON_PRIVILEGED, // include all non-privileged intents, would be better to specify which ones you actually need
+// "GUILD_MEMBERS", // lets you request guild members (i.e. fixes the issue)
+
+export const client = new Client({ intents: [GatewayIntentBits.Guilds, 'GuildMembers'] });
 
 client.commands = new Collection();
 
