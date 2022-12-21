@@ -1,6 +1,6 @@
 import { readdir } from 'node:fs/promises';
 import path from 'node:path';
-import { Client, Collection, GatewayIntentBits, IntentsBitField } from 'discord.js';
+import { Client, Collection, GatewayIntentBits } from 'discord.js';
 import config from './config.json';
 
 

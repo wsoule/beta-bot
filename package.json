@@ -1,10 +1,12 @@
 {
-  "name": "betaBot",
+  "name": "beta-bot",
   "version": "1.0.0",
   "description": "Beta discord bot",
   "main": "index.ts",
   "scripts": {
-    "start": "tsc --watch & nodemon --quiet build/index.js"
+    "start": "tsc --watch & nodemon --quiet build/index.js",
+    "lint": "eslint . --fix"
+
   },
   "repository": "git@github.com:wsoule/betaBot.git",
   "author": "Wyat Soule <wsoule679@gmail.com>",
@@ -17,6 +19,7 @@
     "typescript": "^4.9.4"
   },
   "devDependencies": {
+    "@brass-raven/core": "../../brass-raven/core/build",
     "eslint": "^8.29.0"
   }
 }
